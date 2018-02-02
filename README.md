@@ -109,9 +109,31 @@ No. Att Driver
 
 You can find a detailed description on using Bumpy in the README section available [here](https://github.com/electronut/ElectronutLabs-bumpy).
 
-** Testing
+## Testing
 
-* 
+* Install **nRF Connect** appication from Play Store for Android or App Store for Apple.
+
+* Connect a AA battery. Ensure that the battery polarity is correct before inserting it into boostaBLE.
+
+* Upload **boostaBLE-test** firmware as described [above](https://github.com/electronut/ElectronutLabs-boostaBLE#programming).
+
+* On successful upload, the on-board LED should start blinking in blue colour.
+
+* Run: **nRF Connnect**
+
+* Scan for devices to find **boostaBLE**.
+
+* Click on **Connect** tab next to **boostaBLE** to connect to the device.
+
+* Click on **Nordic UART Service** to access the characteristics of this service.
+
+* Click on the icon (3 down-link arrows) next to **TX Characteristic** to request data from boostaBLE.
+
+* The incoming data includes Temperature (T), Relative Humidity (H) and Accelerometer (X, Y, Z) data.
+
+![](NUS-data.png)
+
+* Shake boostaBLE along X, Y or Z axis to trigger shake detect functionality. This can be observed by the blinking of LED in purple colour twice.
 
 
 ## Buy a boostaBLE!
