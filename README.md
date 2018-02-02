@@ -103,6 +103,16 @@ No. Att Driver
  
 * Run: `attach 1` or `att 1` to attach to the target device i.e. Nordic nRF52.
 
+* Run: `load boostable_test_merged.hex` to upload the hex file.
+
+* You can choose to execute the code directly to check if the application has been uploaded by issuing `run` command or execute `detach` command followed by `Quit` to exit the debugger.
+
+You can find a detailed description on using Bumpy in the README section available [here](https://github.com/electronut/ElectronutLabs-bumpy).
+
+** Testing
+
+* 
+
 
 ## Buy a boostaBLE!
 
