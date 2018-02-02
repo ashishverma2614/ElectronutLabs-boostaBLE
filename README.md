@@ -41,6 +41,19 @@ boostaBLE can be programmed using SWD interface. The guide to use nRF52-DK and B
 | SWDIO | DIO |
 | SWDCLK | DCLK |
 
+
+### Steps
+
+* Copy **boostable-test** from *code/* directory to *nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral* directory.
+
+* Open *nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\boostaBLE-test\boostaBLE\s132\armgcc* in command prompt.
+
+* Run: `make` to compile the code.
+
+* To upload softdevice, run: `make flash_softdevice`
+
+* Upload the application, using `make flash` command.
+
 <hr />
 
 <h2 name="Bumpy"> Guide: Program boostaBLE with Bumpy </h2>
@@ -57,6 +70,38 @@ boostaBLE can be programmed using SWD interface. The guide to use nRF52-DK and B
 | SWCLK | DCLK |
 
 <hr />
+
+### Steps
+
+In order to upload BLE applications that are softdevice dependent, you need to generate a merge the softdevice and application hex files. Follow the steps mentioned below to generate a merged hex file.
+
+* Install [nRFGo Studio](https://www.nordicsemi.com/chi/node_176/2.4GHz-RF/nRFgo-Studio) or [nRF5x-Command-Line-Tools-Win32](https://www.nordicsemi.com/eng/nordic/Products/nRF51822/nRF5x-Command-Line-Tools-Win32/33444)
+
+* Copy **boostable-test** from *code/* directory to *nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral* directory.
+
+* Open *nRF5_SDK_14.2.0_17b948a\examples\ble_peripheral\boostaBLE-test\boostaBLE\s132\armgcc* in command prompt.
+
+* Run: **make** to compile the code and generate application hex file.
+
+* Merge softdevice and application, using following command:
+
+`mergehex -m E:\nRF5_SDK_14.2.0_17b948a\components\softdevice\s132\hex\s132_nrf52_5.0.0_softdevice.hex _build\nrf52832_xxaa.hex -o boostable_test_merged.hex` 
+
+* Run: `arm-none-eabi-gdb`
+
+* Connect your Bumpy to PC.
+
+* Find out the COM port assigned to Bumpy using Device Manager.
+
+* Run: `target extended remote //./<COM_Port>` or `tar ext //./<COM_Port>`
+
+* Run: `monitor swdp_scan` or `mon swdp_scan` to scan devices available for debugging. You should see following response:
+
+`Available Targets:
+No. Att Driver
+ 1      Nordic nRF52`
+ 
+* Run: `attach 1` or `att 1` to attach to the target device i.e. Nordic nRF52.
 
 
 ## Buy a boostaBLE!
