@@ -18,6 +18,12 @@ sensors with a built-in AA battery.
 - Two 1 x 6 female headers for GPIOs
 - PCB antenna
 
+## Pinout
+
+
+![](boostaBLE-pinout.jpg)
+
+
 ## Programming
 
 boostaBLE can be programmed using SWD interface. The guide to use nRF52-DK and Bumpy to program boostaBLE are included below:
