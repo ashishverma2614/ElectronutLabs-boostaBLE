@@ -20,6 +20,8 @@ sensors with a built-in AA battery.
 
 ## Programming
 
+boostaBLE can be programmed using SWD interface. The guide to use nRF52-DK and Bumpy to program boostaBLE are included below:
+
 <h3><a href="#nRF52-DK">Guide: Program boostaBLE with nRF52-DK</a><h3/>
 
 <h3><a href="#Bumpy">Guide: Program boostaBLE with Bumpy</a><h3/>
@@ -28,23 +30,31 @@ sensors with a built-in AA battery.
 
 <h2 name="nRF52-DK"> Guide: Program boostaBLE with nRF52-DK </h2>
 
-.
-.
-.
-.
-.
-.
+![](boostable-DK.png)
+
+### Connections
+
+| nRF52-DK | boostaBLE |
+| -------- | --------- |
+| VTG | VDD |
+| GND | GND |
+| SWDIO | DIO |
+| SWDCLK | DCLK |
 
 <hr />
 
 <h2 name="Bumpy"> Guide: Program boostaBLE with Bumpy </h2>
-..
-.
-.
-.
-.
-.
-.
+
+![](boostable-bumpy.png)
+
+### Connections
+
+| Bumpy | boostaBLE |
+| ----- | --------- |
+| 3V3 | VDD |
+| GND | GND |
+| SWDIO | DIO |
+| SWCLK | DCLK |
 
 <hr />
 
