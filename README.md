@@ -30,7 +30,7 @@ boostaBLE can be programmed using SWD interface. The guide to use nRF52-DK and B
 
 <h2 name="nRF52-DK"> Guide: Program boostaBLE with nRF52-DK </h2>
 
-![](boostable-DK.png)
+![](boostaBLE-DK.jpg)
 
 ### Connections
 
@@ -58,7 +58,7 @@ boostaBLE can be programmed using SWD interface. The guide to use nRF52-DK and B
 
 <h2 name="Bumpy"> Guide: Program boostaBLE with Bumpy </h2>
 
-![](boostable-bumpy.png)
+![](boostaBLE-bumpy.jpg)
 
 ### Connections
 
