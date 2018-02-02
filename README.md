@@ -20,7 +20,34 @@ sensors with a built-in AA battery.
 
 ## Programming
 
-... 
+<h3><a href="#nRF52-DK">Guide: Program boostaBLE with nRF52-DK</a><h3/>
+
+<h3><a href="#Bumpy">Guide: Program boostaBLE with Bumpy</a><h3/>
+
+<hr />
+
+<h2 name="nRF52-DK"> Guide: Program boostaBLE with nRF52-DK </h2>
+
+.
+.
+.
+.
+.
+.
+
+<hr />
+
+<h2 name="Bumpy"> Guide: Program boostaBLE with Bumpy </h2>
+..
+.
+.
+.
+.
+.
+.
+
+<hr />
+
 
 ## Buy a boostaBLE!
 
